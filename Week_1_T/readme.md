@@ -1,27 +1,28 @@
 # Audio assignment 1 notes
 
-* begining announcements
-  * trouble including tone?
+* Including Tone.js
   * CDN: another option to include
-    * <https://cdnjs.cloudflare.com/ajax/libs/tone/0.11.0/Tone.min.js>
+    * <https://cdnjs.com/libraries/tone>
     * <https://cdnjs.com/libraries/p5.js>
     * downsides are that this will only work when connected to internet
     * very good idea if the site is ever hosted online
     * very fast download for user
     * will always have the most updated version of library
-  * Tone.Editor
-    * <https://github.com/willurmston/Tone.Editor>
-    * some things are broken but still useful for testing out parameters
 * Setting up a local server 
   * [Download Node](https://nodejs.org/en/)
     * use one of the following node packages to serve the files
       * [lite-server](https://www.npmjs.com/package/lite-server)
       * [http-server](https://www.npmjs.com/package/http-server)
       * [browser-sync](https://www.browsersync.io/)
+        * host folders with ```browser-sync start -s --directory -f ./ ```
 * If you're looking for a new code editor check out [Visual Studio Code](https://code.visualstudio.com/), it's pretty great 
 
+Refer to [WEBAUDIO BASICS & SOUND FILE PLAYERS](https://pdm.lsupathways.org/3_audio/1_sampler/1_lesson_1/)  for more examples
+
 ## Starter files 
+
 Use [this](0_p5-tone-starter) to start new projects. 
+
 ## Example 1:
 
 * [Including tone](1_includingTone_FINISHED/sketch.js)
