@@ -2,6 +2,8 @@
 
 Examples for Programming Digital Media class at Louisiana State University, Spring 2019
 
+[Slides](https://lsu-pdm-2019.netlify.com/readme.html)
+
 ## Resources
 
 ### Tone.js
@@ -21,15 +23,15 @@ Examples for Programming Digital Media class at Louisiana State University, Spri
 - [tone-rhythm](https://github.com/scraggo/tone-rhythm) - very helpful for making musical phrases with tone
   - [Ex. Maria](https://codesandbox.io/s/qzq0lvpq0w) - play Maria with tone. This requires knowledge of importing from npm with the 'import' keyword. It will not work with a script tag.
 - [Algorithmic Music Tutorial](https://junshern.github.io/algorithmic-music-tutorial/) - uses p5 sound but many of the creative ideas are transferable to Tone.js
-
+---
 #### Inspiration
 
-[Hackpact](https://stc.github.io/HackPact/) - Algorithmic audiovisual sonification studies
+- [Hackpact](https://stc.github.io/HackPact/) - Algorithmic audiovisual sonification studies
 
 
 ### Digital Audio
 
-[Digital Sound and Music](http://digitalsoundandmusic.com/curriculum/) - explanations and definitions of all things digital sound
+- [Digital Sound and Music](http://digitalsoundandmusic.com/curriculum/) - explanations and definitions of all things digital sound
 
 ### JS Basics
 
