@@ -1,17 +1,53 @@
-# Understanding the Audio Signal Path
+# Project Setup
 
-add image here
+## Editor
+- [Visual Studio Code](https://code.visualstudio.com/), my choice
+- Others
+  - Atom
+  - Sublime
+---
+## Local Server
+- [Download Node](https://nodejs.org/en/)
+- Choose from these servers
+  * [lite-server](https://www.npmjs.com/package/lite-server)
+  * [http-server](https://www.npmjs.com/package/http-server)
+  * [browser-sync](https://www.browsersync.io/)
+    * host folders with ```browser-sync start -s --directory -f ./ ```
 
-![null](/images/uploads/simple_audio_pathway-1-.png)
+---
+
+# Assignment 1: Build a sampler 
+
+- [assignment](https://moodle3.lsu.edu/mod/assign/view.php?id=988727)
+- [project starter](https://github.com/tatecarson/LSU-PDM-Spring-2019/tree/master/Week_1_T/0_p5-tone-starter)
+  
+
+---
+
+# WEBAUDIO BASICS & SOUND FILE PLAYERS
+
+---
+
+## Understanding the Audio Signal Path
+
+![null](https://d33wubrfki0l68.cloudfront.net/456ff8140850b3122895b86c7d9f2743e4f3d480/593ce/images/uploads/simple_audio_pathway-1-.png)
+
+ex:
+
+```javascript
+var player = new Tone.Player().toMaster();
+```
 
 ---
 
 ## Creating a Sound File Player
 
-[] add an empty codepen here and type out the example from scratch
+<iframe height="300" style="width: 100%;" scrolling="no" title="PDM Sound: Sample Playback" src="//codepen.io/lsuddem/embed/MXVgVR/?height=300&theme-id=35490&default-tab=result" frameborder="no" allowtransparency="true" allowfullscreen="true">
+  See the Pen <a href='https://codepen.io/lsuddem/pen/MXVgVR/'>PDM Sound: Sample Playback</a> by LSU DDEM
+  (<a href='https://codepen.io/lsuddem'>@lsuddem</a>) on <a href='https://codepen.io'>CodePen</a>.
+</iframe>
 
-{{% codepen 500 MXVgVR %}}
-
+[starter template](https://codepen.io/lsuddem/pen/qgYmGr)
 ---
 
 ## Playing Multiple Sounds with Tone.Players
@@ -24,12 +60,14 @@ Since we are now dealing with multiple sound files, we should cover some of the 
 
 ---
 
-### Triggering Sounds
+### Triggering and changing sounds
 
-There are multiple ways of triggering and controlling sounds. Below we look at keyIsDown, buttons, and sliders.
+- keyIsDown
+- <button> Buttons</button> 
+- sliders.   <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
 
-#### keyIsDown
 
+note:
 Since we have multiple sounds to play now we can use keys on the keyboard to trigger them. To do that we use the p5 function keyIsDown. The embedded code below shows this method in action.
 
 ---
