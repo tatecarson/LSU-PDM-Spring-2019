@@ -2,12 +2,14 @@
 
 Examples for Programming Digital Media class at Louisiana State University, Spring 2019
 
+
+## Lectures
 - **2-12-19** - Web audio basics and sound file players - [slides](https://lsu-pdm-2019.netlify.com/week_1_t/_site/#/), [textbook](https://pdm.lsupathways.org/3_audio/1_sampler/1_lesson_1/)
 
 
-[Intro and resources - slides](https://lsu-pdm-2019.netlify.com/readme.html)
 
 ## Resources
+[slides](https://lsu-pdm-2019.netlify.com/readme.html)
 
 ### Tone.js
 
