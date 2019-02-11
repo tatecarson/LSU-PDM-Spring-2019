@@ -2,6 +2,8 @@
 
 Examples for Programming Digital Media class at Louisiana State University, Spring 2019
 
+- email: <tcarso2@lsu.edu>   
+- Office hours: 1pm to 3pm Monday in the Digital Media Center (2006)
 
 ## Lectures
 - **2-12-19** - Web audio basics and sound file players - [slides](https://lsu-pdm-2019.netlify.com/week_1_t/_site/#/), [textbook](https://pdm.lsupathways.org/3_audio/1_sampler/1_lesson_1/)
