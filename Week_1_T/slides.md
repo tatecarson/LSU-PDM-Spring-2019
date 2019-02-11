@@ -96,57 +96,103 @@ Since we have multiple sounds to play now we can use keys on the keyboard to tri
 
 #### Starting the sounds
 
-To get each specific sound to play we use a special syntax: players.get("samplename"). In this case we do either players.get("bells") to select the bells sound or players.get("arpeggio”) to play the arpeggiated synthesizer sound. Then we call .start() on the same line to play those sounds.
+store multiple samples in a Players object
+```
+new Tone.Players({
+    name1: "url",
+    name2: "url",
+    name3: "url"
+  })
+```
+
+
+select sample
+```
+players.get("name1")
+```
+
+play sample
+```
+players.get("name1").start()
+```
 
 ---
 
-{{% codepen 500 vrzEjR %}}
+## Tone Players example
 
-#### Using buttons
+<iframe height="303" style="width: 100%;" scrolling="no" title="PDM Sound: Playing Multiple Samples with Tone.Players" src="//codepen.io/lsuddem/embed/vrzEjR/?height=303&theme-id=35490&default-tab=result" frameborder="no" allowtransparency="true" allowfullscreen="true">
+  See the Pen <a href='https://codepen.io/lsuddem/pen/vrzEjR/'>PDM Sound: Playing Multiple Samples with Tone.Players</a> by LSU DDEM
+  (<a href='https://codepen.io/lsuddem'>@lsuddem</a>) on <a href='https://codepen.io'>CodePen</a>.
+</iframe>
 
-Instead of using **keyIsDown** we can create buttons to trigger sounds. The below example is the same as the previous one just now we use buttons.
+[starter template](https://codepen.io/lsuddem/pen/wNjjKM?editors=0010)
 
-We create a button with the p5 function **createButton**. Inside the ('') we give the button text to display.
+---
 
+# Using buttons
+
+Alternatives to **keyIsDown**?
+<button>Buttons!!</button>
+<button>Buttons!!</button>
+<button>Buttons!!</button>
+<button>Buttons!!</button>
+
+---
+
+* With p5.dom (make sure it's imported)
+  * **createButton()**. 
+* Position it 
+  * **button1.position(x, y)** 
+* listen on it
+  * **button1.mousePressed()**
+
+ex:
 ```
-createButton("button label");
+button1 = createButton("button label");
+button1.position(x, y);
+button1.mousePressed()
 ```
+---
 
-We can then customize the button by modifying some of its properties.
-**button1.position(x, y)** determines the button location.
+## play sample with buttons
 
-**button1.mousePressed()** calls a function that we define below. Inside of this function put any code that you want to run when you click the button. In the embedded example below, we made three new functions: play1, play2, and play3. Inside of each, we have our **multiplayer.get("samplename").start()** function that causes the Tone.Players object to grab and play the corresponding sound file:
+<iframe height="300" style="width: 100%;" scrolling="no" title="PDM Sound: Controlling Players with On-Screen Buttons" src="//codepen.io/lsuddem/embed/NoMMwp/?height=300&theme-id=35490&default-tab=result" frameborder="no" allowtransparency="true" allowfullscreen="true">
+  See the Pen <a href='https://codepen.io/lsuddem/pen/NoMMwp/'>PDM Sound: Controlling Players with On-Screen Buttons</a> by LSU DDEM
+  (<a href='https://codepen.io/lsuddem'>@lsuddem</a>) on <a href='https://codepen.io'>CodePen</a>.
+</iframe>
 
-{{% codepen 500 OEoZyQ %}}
+[starting template](https://codepen.io/lsuddem/pen/Vgxxyo?editors=0010)
+---
 
-#### Using sliders
+## Using sliders
 
-To change an aspect of our sound while it is playing we can use a slider. To make a slider in p5.js use createSlider().
+Change the sound while it's playing. 
+
+To make a slider in p5.js use createSlider().
 
 ##### Syntax
 
 ```
 createSlider(min,max,[value],[step]);
 ```
+---
 
-##### Parameters
+## Parameters
 
 * _min_ - minimum value of the slider
 * _max_ - maximum value of the slider
 * _value_ - default value of the slider
 * _step_ - step size for each tick of the slider (if step is set to 0, the slider will move continuously from the minimum to the maximum value)
 
-{{% notice tip %}}
-Remember: when a function's arguments are listed inside of flat brackets ina syntax example or on an API document, this indicates that those arguments are optional, and are not required in order for the function to run successfully. In the case of createSlider(), the first two arguments (min and max) are required, while the second two (value and step) can be added if you'd like to have more control over how your slider behaves.
-{{% /notice %}}
+Current slider value is stored in **slider.value()**
 
-To get the current value of the slider and use it in your code, call for slider.value() and attach it to a property of your player. 
+---
 
-#### Labeling your sampler
+## Labeling your sampler
 
-It's a good idea to label any sliders used to control your sampler so that you know what they do. Here is a quick reminder of how the text() function works: 
+For the assignment you need to label your sampler:
 
-##### Syntax
+#### Syntax
 
 ```
 text(str,x,y);
@@ -154,10 +200,21 @@ text(str,x,y);
 
 ##### Parameters
 
-*  _str_ - the alphanumeric symbols to be displayed- x-coordinate of text
+*  _str_ - text content
 *  _y_ - the y axis coordinate of text
 *  _x_ - the x axis coordinate of text
 
-In the code below, we use a button to trigger the playback of each sound and  a slider, labeled "\[File Name] Playback Speed" to change the playback speed rate of our sound while it plays:
+---
 
-{{% codepen 500 LrJrVe %}}
+## Change playback speed with slider
+
+<iframe height="324" style="width: 100%;" scrolling="no" title="PDM Sound: Sliders and Buttons to Trigger and Control Players" src="//codepen.io/lsuddem/embed/LrJrVe/?height=324&theme-id=35490&default-tab=result" frameborder="no" allowtransparency="true" allowfullscreen="true">
+  See the Pen <a href='https://codepen.io/lsuddem/pen/LrJrVe/'>PDM Sound: Sliders and Buttons to Trigger and Control Players</a> by LSU DDEM
+  (<a href='https://codepen.io/lsuddem'>@lsuddem</a>) on <a href='https://codepen.io'>CodePen</a>.
+</iframe>
+
+[starter template](https://codepen.io/lsuddem/pen/MLGGxB?editors=0010)
+
+---
+
+### Start on your assignments now. We'll add effects to them on Thursday. 
