@@ -1,3 +1,8 @@
+---
+title: Introduction
+theme: solarized
+---
+
 # Project Setup
 
 ## Editor
@@ -50,6 +55,23 @@ var player = new Tone.Player().toMaster();
 [starter template](https://codepen.io/lsuddem/pen/qgYmGr)
 ---
 
+
+# Find your own sounds
+* [freesound](http://www.freesound.org)
+* [Macaulay Library](https://www.macaulaylibrary.org/#_ga=2.227816093.1451042078.1519181247-355812784.1519181247)
+* [Landr](https://www.landr.com/en/)
+
+---
+
+# Filetypes
+* mp3 is best
+* other options
+  * [Supported media formats](https://developer.mozilla.org/en-US/docs/Web/HTML/Supported_media_formats)
+* convert wavs with:
+    * [Online audio converter](https://online-audio-converter.com/) - in the browser 
+    * [lame](http://lame.sourceforge.net/download.php) - convert to mp3 in the terminal
+
+---
 ## Playing Multiple Sounds with Tone.Players
 
 note: 
