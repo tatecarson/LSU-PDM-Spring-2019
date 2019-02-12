@@ -68,6 +68,7 @@ var player = new Tone.Player().toMaster();
 * other options
   * [Supported media formats](https://developer.mozilla.org/en-US/docs/Web/HTML/Supported_media_formats)
 * convert wavs with:
+    * [Audacity](https://www.audacityteam.org/)
     * [Online audio converter](https://online-audio-converter.com/) - in the browser 
     * [lame](http://lame.sourceforge.net/download.php) - convert to mp3 in the terminal
 
