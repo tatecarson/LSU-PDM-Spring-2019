@@ -121,7 +121,7 @@ theme: sky
 
 *  collection Tone.Events which can be started/stopped and looped as a single unit.
 
-<iframe height="490" style="width: 100%;" scrolling="no" title="Tone.Transport - Part" src="//codepen.io/lsuddem/embed/aMbBPa/?height=351&theme-id=35490&default-tab=result" frameborder="no" allowtransparency="true" allowfullscreen="true">
+<iframe height="400" style="width: 100%;" scrolling="no" title="Tone.Transport - Part" src="//codepen.io/lsuddem/embed/aMbBPa/?height=351&theme-id=35490&default-tab=result" frameborder="no" allowtransparency="true" allowfullscreen="true">
   See the Pen <a href='https://codepen.io/lsuddem/pen/aMbBPa/'>Tone.Transport - Part</a> by LSU DDEM
   (<a href='https://codepen.io/lsuddem'>@lsuddem</a>) on <a href='https://codepen.io'>CodePen</a>.
 </iframe>
@@ -133,7 +133,7 @@ theme: sky
 
 * alternate notation of a part
 
-<iframe height="490" style="width: 100%;" scrolling="no" title="Tone.Transport - Sequence" src="//codepen.io/lsuddem/embed/YgXMYW/?height=300&theme-id=35490&default-tab=result" frameborder="no" allowtransparency="true" allowfullscreen="true">
+<iframe height="400" style="width: 100%;" scrolling="no" title="Tone.Transport - Sequence" src="//codepen.io/lsuddem/embed/YgXMYW/?height=300&theme-id=35490&default-tab=result" frameborder="no" allowtransparency="true" allowfullscreen="true">
   See the Pen <a href='https://codepen.io/lsuddem/pen/YgXMYW/'>Tone.Transport - Sequence</a> by LSU DDEM
   (<a href='https://codepen.io/lsuddem'>@lsuddem</a>) on <a href='https://codepen.io'>CodePen</a>.
 </iframe>
@@ -151,7 +151,7 @@ theme: sky
 
 # Rain loop
 
-<iframe height="490" style="width: 100%;" scrolling="no" title="Tone.loop with Rain on a tin roof " src="//codepen.io/lsuddem/embed/VRLOwb/?height=317&theme-id=35490&default-tab=result" frameborder="no" allowtransparency="true" allowfullscreen="true">
+<iframe height="400" style="width: 100%;" scrolling="no" title="Tone.loop with Rain on a tin roof " src="//codepen.io/lsuddem/embed/VRLOwb/?height=317&theme-id=35490&default-tab=result" frameborder="no" allowtransparency="true" allowfullscreen="true">
   See the Pen <a href='https://codepen.io/lsuddem/pen/VRLOwb/'>Tone.loop with Rain on a tin roof </a> by LSU DDEM
   (<a href='https://codepen.io/lsuddem'>@lsuddem</a>) on <a href='https://codepen.io'>CodePen</a>.
 </iframe>
