@@ -3,6 +3,27 @@ title: "Sound effects and Sequencing"
 theme: sky 
 ---
 
+
+## Audio project 4
+### Sound with visuals
+
+[link](https://moodle3.lsu.edu/mod/assign/view.php?id=988732)
+
+---
+
+## Bubbles with sound
+
+<iframe height="490" style="width: 100%;" scrolling="no" title="Bubbles with sound!" src="//codepen.io/lsuddem/embed/rROVea/?height=490&theme-id=35490&default-tab=js,result" frameborder="no" allowtransparency="true" allowfullscreen="true">
+  See the Pen <a href='https://codepen.io/lsuddem/pen/rROVea/'>Bubbles with sound!</a> by LSU DDEM
+  (<a href='https://codepen.io/lsuddem'>@lsuddem</a>) on <a href='https://codepen.io'>CodePen</a>.
+</iframe>
+
+---
+
+* See [HackPact](https://github.com/stc/HackPact) for inspiration
+
+---
+
 ## Sound Effect
 
 ---
@@ -155,21 +176,3 @@ theme: sky
 </iframe>
 
 ---
-
-## Audio project 4
-### Sound with visuals
-
-[link](https://moodle3.lsu.edu/mod/assign/view.php?id=988732)
-
----
-
-## Bubbles with sound
-
-<iframe height="490" style="width: 100%;" scrolling="no" title="Bubbles with sound!" src="//codepen.io/lsuddem/embed/rROVea/?height=490&theme-id=35490&default-tab=js,result" frameborder="no" allowtransparency="true" allowfullscreen="true">
-  See the Pen <a href='https://codepen.io/lsuddem/pen/rROVea/'>Bubbles with sound!</a> by LSU DDEM
-  (<a href='https://codepen.io/lsuddem'>@lsuddem</a>) on <a href='https://codepen.io'>CodePen</a>.
-</iframe>
-
----
-
-* See [HackPact](https://github.com/stc/HackPact) for inspiration
