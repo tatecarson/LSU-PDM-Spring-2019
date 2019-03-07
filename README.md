@@ -12,7 +12,7 @@ Examples for Programming Digital Media class at Louisiana State University, Spri
 - **2-21-19** - Scheduling signals and LFOs - [slides](https://lsu-pdm-2019.netlify.com/week_2_th/_static/#/)
 - **2-25-19** - Instruments and Sequencers - [slides](https://lsu-pdm-2019.netlify.com/week_3_t/_static/#/), [textbook](https://pdm.lsupathways.org/3_audio/2_synthsandmusic/2_lesson_2/)
 - **2-28-19** - Sound Effects and Sequencers - [slides](https://lsu-pdm-2019.netlify.com/week_3_th/_static/#/)
-
+- **3-6-19** - Rhythm / Scales / Tuning / Distributed smartphone music - [slides](https://lsu-pdm-2019.netlify.com/week_4_t/_static/#/)
 ## Resources
 [slides](https://lsu-pdm-2019.netlify.com/readme.html)
 
