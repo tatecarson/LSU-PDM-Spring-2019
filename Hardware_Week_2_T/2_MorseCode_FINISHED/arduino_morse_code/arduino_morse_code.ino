@@ -13,19 +13,11 @@ void setup()
   Serial.println(message);
 }
 
-void loop()
-{
+void loop() {
   delay(timeUnit * 7);
-  for (int i = 0; i < message.length() && !messageDisplayed; i++)
-  {
+  for (int i = 0; i < message.length(); i++) {
 
-    if (i == message.length() - 1)
-    {
-      messageDisplayed = true;
-    }
-
-    switch (message.charAt(i))
-    {
+    switch (message.charAt(i)) {
     case 'a':
       dot();
       dash();
