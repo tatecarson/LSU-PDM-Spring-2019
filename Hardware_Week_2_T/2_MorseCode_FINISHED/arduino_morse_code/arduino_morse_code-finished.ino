@@ -1,23 +1,21 @@
 // Adapted from circuits.io user prabh mystry (https://circuits.io/circuits/1896273-morse)
 
-String message = "SOS"; // test string
-int timeUnit = 500;     // time units for morse
-bool messageDisplayed = false;
+String message = "SOS hello"; // test string
+int timeUnit = 100;     // time units for morse
 
 void setup()
 {
   pinMode(LED_BUILTIN, OUTPUT);
   message.toLowerCase();
-  //speed
-  Serial.begin(9600);
-  Serial.println(message);
 }
 
 void loop() {
-  delay(timeUnit * 7);
   for (int i = 0; i < message.length(); i++) {
-
     switch (message.charAt(i)) {
+    case ' ':
+      // gap between two words 
+      delay(timeUnit * 7);
+      break;
     case 'a':
       dot();
       dash();
@@ -221,11 +219,8 @@ void loop() {
       dash();
       dash();
       break;
-    case ' ':
-      delay(timeUnit * 4);
-      break;
+  
     }
-    delay(timeUnit * 2);
   }
 }
 
@@ -240,6 +235,7 @@ void dot()
 void dash()
 {
   digitalWrite(LED_BUILTIN, HIGH);
+  // three shorts = a long 
   delay(timeUnit * 3);
   digitalWrite(LED_BUILTIN, LOW);
   delay(timeUnit);

@@ -42,6 +42,13 @@ Blink [tutorial](http://www.arduino.cc/en/Tutorial/Blink)
 
 We will use this example to send 5v to the LED to turn it on and then 0v to turn it off. This loops over and over. 
 
+# Circuit 
+from tutorial: 
+```
+ connect one end of the resistor (220 ohms) to the digital pin correspondent to the LED_BUILTIN constant (digital pin 13). Connect the long leg of the LED (the positive leg, called the anode) to the other end of the resistor. Connect the short leg of the LED (the negative leg, called the cathode) to the GND. In the diagram below we show an UNO board that has D13 as the LED_BUILTIN value.
+```
+
+
 ### Functions 
 
 * pinMode - initialize pin 13 as an output
