@@ -8,6 +8,9 @@ int button2 = 0;
 int button1State = 0;
 int button2State = 0;
 
+// States allow us to turn the button from a momentary button to a toggle button
+// now we can press the button once to switch between two states
+
 void setup()
 {
   // because we're using a digital pin we have
