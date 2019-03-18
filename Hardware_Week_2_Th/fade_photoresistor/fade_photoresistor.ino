@@ -41,28 +41,28 @@ void loop() {
   // toggle between fading and using pot
   button1 = digitalRead(2);
   Serial.println(button1);
-  // If the switch changed, due to noise or pressing:
-  if (button1 != lastButton1State) {
-    // reset the debouncing timer
-    lastDebounceTime = millis();
-  }
-
-  if ((millis() - lastDebounceTime) > debounceDelay) {
-    // whatever the reading is at, it's been there for longer than the debounce
-    // delay, so take it as the actual current state:
-
-    // if the button state has changed:
-    if (button1 != button1State) {
-      button1State = button1;
-
-      // only toggle the LED if the new button state is HIGH
-      if (button1State) {
-        fadeState = !fadeState;
-        Serial.println(fadeState); 
-      }
-    }
-  }
-  
+//  // If the switch changed, due to noise or pressing:
+//  if (button1 != lastButton1State) {
+//    // reset the debouncing timer
+//    lastDebounceTime = millis();
+//  }
+//
+//  if ((millis() - lastDebounceTime) > debounceDelay) {
+//    // whatever the reading is at, it's been there for longer than the debounce
+//    // delay, so take it as the actual current state:
+//
+//    // if the button state has changed:
+//    if (button1 != button1State) {
+//      button1State = button1;
+//
+//      // only toggle the LED if the new button state is HIGH
+//      if (button1State) {
+//        fadeState = !fadeState;
+//        Serial.println(fadeState); 
+//      }
+//    }
+//  }
+//  
 
   // save the reading. Next time through the loop, it'll be the lastButtonState:
   lastButton1State = button1;
@@ -104,9 +104,10 @@ void loop() {
 
     // read from pot on A0
     pot = analogRead(A0);
-  
-    // constrain the pot value 0 - 255
-    brightness = map(pot, 0, 1023, 0, 255);
+    Serial.println(pot);
+    
+    // test for the room you're in
+    brightness = map(pot, 150, 700, 0, 255);
 
     // set the brightness of pin 9 with pot value
     analogWrite(led, brightness);
