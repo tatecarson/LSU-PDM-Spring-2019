@@ -1,4 +1,6 @@
 // Control the brightness of an LED with a photo resistor
+// photoresistor circuit:
+//https://www.arduino.cc/en/uploads/Tutorial/PhotoCellA0.png
 
 // PWM Pin
 int led = 9;
