@@ -99,7 +99,7 @@ void loop()
   // save the current state as the last state, for next time through the loop
   lastButton2 = button2;
 
-  // change onState
+  // change onState after x number of presses
   if (buttonPushCounter % 4 == 0)
   {
     onState = true;
