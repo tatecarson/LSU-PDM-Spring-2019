@@ -1,7 +1,7 @@
-var serial; // variable to hold an instance of the serialport library
-var portName = '/dev/cu.usbmodem14101'; // fill in your serial port name here
-var locH, locV; // location of the circle
-let visibility = 1;
+var serial;
+var portName = '/dev/cu.usbmodem14201'
+var locX, locY;
+var visibility = 1;
 
 function setup() {
   createCanvas(500, 600);
@@ -23,16 +23,12 @@ function setup() {
 }
 
 function draw() {
-  background(0); // black background
-  fill(255)
-  // ellipse(100, 100, 50, 50);
+  background(0);
+  fill(255);
 
-  console.log(locH, locV, visibility);
-  if (visibility == 0) {
-
-    fill(255); // fill depends on the button
-    ellipse(locH, locV, 50); // draw the circle
-  }
+  console.log(locX, locY, visibility);
+  ellipse(locX, locY, 50);
+  if (visibility == 1) {}
 }
 // get the list of ports:
 function printList(portList) {
@@ -52,18 +48,20 @@ function portOpen() {
 }
 
 function serialEvent() {
-  // read a string from the serial port
-  // until you get carriage return and newline:
   var inString = serial.readStringUntil('\r\n');
-  //check to see that there's actually a string there:
+
   if (inString.length > 0) {
-    var sensors = split(inString, ','); // split the string on the commas
-    // console.log(sensors);
-    if (sensors.length > 2) { // if there are three elements
-      locH = map(floor(sensors[0]), 0, 1023, 0, width); // element 0 is the locH
-      locV = map(sensors[1], 0, 1023, 0, height); // element 1 is the loc
-      visibility = sensors[2];
+    if (inString !== 'hello') {
+
+      var sensors = split(inString, ',');
+
+      if (sensors.length > 2) {
+        locX = map(sensors[0], 0, 1023, 0, width);
+        locY = map(sensors[1], 0, 1023, 0, height);
+        visibility = sensors[2];
+      }
     }
+    serial.write('x');
   }
 }
 

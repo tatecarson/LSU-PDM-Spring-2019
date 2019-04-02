@@ -4,7 +4,7 @@ void setup() {
   // configure the serial connection:
   Serial.begin(9600);
   // configure the digital input:
-  pinMode(buttonPin, INPUT_PULLUP);
+  pinMode(buttonPin, INPUT);
   while (Serial.available() <= 0) {
     Serial.println("hello"); // send a starting message
     delay(300);              // wait 1/3 second
